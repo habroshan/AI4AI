@@ -16,7 +16,7 @@ The pipeline is dataset‑ and model‑agnostic. We evaluate on **MNIST**, **CIF
 ```
 AI-to-Protect-AI/
 ├── README.md                      # this file
-├── LICENSE                        # choose a license (MIT/BSD-3-Clause recommended)
+├── LICENSE                        # license (MIT)
 ├── env/                           # environment files
 │   ├── requirements.txt           # pip env (CPU)
 │   └── environment.yml            # conda env (GPU optional)
@@ -41,7 +41,7 @@ AI-to-Protect-AI/
 │   ├── run_all_pipelines_extended.py
 │   └── make_ablation_tables_from_raw.py
 ├── configs/                       # optional JSON/YAML configs (create as needed)
-├── data/                          # datasets (git‑ignored)
+├── data/                          # datasets (not uploaded to the repository, but we have included guidelines)
 │   ├── mnist/                     # auto‑downloaded by torchvision
 │   ├── cifar10/                   # auto‑downloaded by torchvision
 │   └── chestxray14/               # NIH images + Data_Entry_2017.csv (user‑provided)
@@ -49,7 +49,7 @@ AI-to-Protect-AI/
 ├── features/                      # extracted BMM features (HDF5, git‑ignored)
 ├── detectors/                     # trained DM artefacts (.joblib, git‑ignored)
 ├── results/                       # metrics JSON/CSVs, confusion matrices, PR/ROC
-└── figures/                       # final plots for the paper
+└── figures/                       # plots (which we have included in the paper)
 ```
 
 **Files present in the upload and how they map:**
