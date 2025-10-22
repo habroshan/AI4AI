@@ -5,7 +5,7 @@ from torchvision import datasets, transforms, models
 from torch.utils.data import DataLoader, Dataset
 import torch.nn as nn
 
-# MNIST model from your repo so keys match the MNIST checkpoint
+# MNIST model from your repo, so keys match the MNIST checkpoint (see the paper for more info)
 try:
     from tm_trainer import SimpleCNN as MNISTModel, flip_labels as mnist_flip_labels
 except Exception:
