@@ -2,7 +2,7 @@
 """
 Comprehensive evaluation pipeline with cross-validation and hold-out testing
 for MNIST poisoning detection using BMM features and multiple detectors.
-Generates CV metrics, final hold-out performance, and saves ROC curves & confusion matrices.
+Generates CV metrics, final hold-out performance, and saves ROC curves and confusion matrices.
 """
 import os
 import numpy as np
@@ -136,7 +136,7 @@ def tune_threshold(scores, labels, recall_min=None):
         if f1 > best_f1: best_f1, best_t = f1, t
     return best_t
 
-# ------------------ Plot & Save ------------------
+# ------------------ Plot and Save ------------------
 def save_roc_cm(labels, scores, name, is_distance=False):
     # ROC
     fpr, tpr, _ = roc_curve(labels, scores if not is_distance else -scores)
