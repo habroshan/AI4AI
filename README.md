@@ -19,7 +19,7 @@ AI-to-Protect-AI/
 ├── LICENSE                        # license (MIT)
 ├── env/                           # environment files
 │   ├── requirements.txt           # pip env (CPU)
-│   └── environment.yml            # conda env (GPU optional)
+│   └── environment.yml            # conda env (GPU optional. We ran the solution on both GPU+CPU and CPU-only machines; however, we recommend using GPUs for faster results.)
 ├── src/
 │   ├── bmm_extractor.py           # BMM (MNIST/CIFAR + ChestXray14 support)
 │   ├── bmm_extractor_v2.py        # variant used for ablations (feature modes)
@@ -44,7 +44,7 @@ AI-to-Protect-AI/
 ├── data/                          # datasets (not uploaded to the repository, but we have included guidelines)
 │   ├── mnist/                     # auto‑downloaded by torchvision
 │   ├── cifar10/                   # auto‑downloaded by torchvision
-│   └── chestxray14/               # NIH images + Data_Entry_2017.csv (user‑provided)
+│   └── chestxray14/               # NIH images + Data_Entry_2017.csv (it's a large dataset so please use the instruction to get and use the dataset)
 ├── models/                        # trained target models (git‑ignored)
 ├── features/                      # extracted BMM features (HDF5, git‑ignored)
 ├── detectors/                     # trained DM artefacts (.joblib, git‑ignored)
