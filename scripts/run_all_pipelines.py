@@ -6,7 +6,7 @@ trains detectors (XGB, MLP, IF, Mahalanobis, Ensemble),
 and saves ROC & CM plots plus metrics CSVs under output_<dataset>/.
 
 Usage:
-  # run all with 10% poison
+  # run all with 10% poison. We sometimes used nohup in our project as it could take a while and we didn't want to lose the results.
   nohup python3 run_all_pipelines.py --poison_frac 0.1 &
 
   # run only CIFAR-10
