@@ -3,7 +3,7 @@
 Unified pipeline runner for MNIST, CIFAR-10, and ChestXray14 datasets.
 For each dataset, trains/loads the Target Model (TM), extracts BMM features,
 trains detectors (XGB, MLP, IF, Mahalanobis, Ensemble),
-and saves ROC & CM plots plus metrics CSVs under output_<dataset>/.
+and saves ROC and CM plots plus metrics CSVs under output_<dataset>/.
 
 Usage:
   # run all with 10% poison. We sometimes used nohup in our project as it could take a while and we didn't want to lose the results.
