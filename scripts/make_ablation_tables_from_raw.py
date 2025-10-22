@@ -81,7 +81,7 @@ def build_ablation(df, dsname, metrics):
 
     tab = pd.DataFrame(rows)
 
-    # Compute deltas vs BB (difference of means); safe even if BB missing
+    # To compute deltas vs BB (difference of means)
     tab["ΔAUC_vs_BB"] = np.nan
     tab["ΔAUCPR_vs_BB"] = np.nan
     for det in tab["det"].unique():
@@ -146,7 +146,7 @@ def main():
         try:
             df, metrics = load_and_normalize(p)
             if df.empty:
-                print(f"[warn] {ds}: no usable rows after normalization (modes must be bb/gb/bbgb)")
+                print(f"[warn] {ds}: no usable rows after normalisation")
                 continue
             build_ablation(df, ds, metrics)
         except Exception as e:
