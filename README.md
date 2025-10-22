@@ -254,5 +254,4 @@ Pick a permissive license (MIT or BSD‑3‑Clause). If you add NIH data handlin
 ---
 
 ### Maintainer
-Dr Hossein Abroshan
-Anglia Ruskin University (ARU), Cambridge, UK
+Dr Hossein Abroshan - Anglia Ruskin University (ARU), Cambridge, UK
