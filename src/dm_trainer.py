@@ -1,4 +1,4 @@
-# dm_trainer.py (updated for BB/GB/BB+GB & AUCPR)
+# dm_trainer.py (updated for BB/GB/BB+GB and AUCPR. You can remove the BB/GB related metrics or ARCPR if you do not want them in your project. See our paper for more information about why we have reported AUCPR)
 
 import argparse
 import json
