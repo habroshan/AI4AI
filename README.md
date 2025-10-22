@@ -134,11 +134,7 @@ Then repeat for `--feature-mode gb` and `bbgb` as above.
 This script wraps the full pipeline (ResNet18 TM → BMM → DM) and expects the data to be present as above:
 
 ```
-python src/run_chestxray14_pipeline.py \
-  --data-root data/chestxray14 \
-  --poison-frac 0.10 \
-  --feature-mode bbgb \
-  --outdir results/chx14_10p_bbgb
+python src/run_chestxray14_pipeline.py --data-root data/chestxray14 --poison-frac 0.10 --feature-mode bbgb --outdir results/chx14_10p_bbgb
 ```
 
 ### 20% poisoning
