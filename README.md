@@ -101,11 +101,7 @@ Below are minimal commands to reproduce the three datasets and the access‑mode
 Train target model (TM), extract BMM features, and train DM (XGBoost):
 
 ```
-python scripts/run_all.py \
-  --dataset mnist \
-  --poison-frac 0.10 --flip-src 1 --flip-dst 7 \
-  --feature-mode bb \
-  --outdir results/mnist_10p_bb
+python scripts/run_all.py --dataset mnist --poison-frac 0.10 --flip-src 1 --flip-dst 7 --feature-mode bb --outdir results/mnist_10p_bb
 ```
 
 Ablate GB and BB+GB feature modes:
@@ -120,11 +116,7 @@ Expected: ROC–AUC ≳ 0.95 for supervised DMs; AUCPR increases slightly with B
 ### 2) CIFAR‑10 (10% label‑flip 0→1)
 
 ```
-python scripts/run_all.py \
-  --dataset cifar10 \
-  --poison-frac 0.10 --flip-src 0 --flip-dst 1 \
-  --feature-mode bb \
-  --outdir results/cifar10_10p_bb
+python scripts/run_all.py --dataset cifar10 --poison-frac 0.10 --flip-src 0 --flip-dst 1 --feature-mode bb --outdir results/cifar10_10p_bb
 ```
 
 Then repeat for `--feature-mode gb` and `bbgb` as above.
