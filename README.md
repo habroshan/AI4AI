@@ -225,7 +225,7 @@ The codebase includes a few convenience scripts kept from development:
 If you find this useful, please cite:
 
 ```
-Abroshan, H. (2025). AI to Protect AI: A Modular Pipeline for Detecting Label‑Flipping Poisoning Attacks. Machine Learning with Applications, .
+Abroshan, H. (2025). AI to Protect AI: A Modular Pipeline for Detecting Label‑Flipping Poisoning Attacks. Machine Learning with Applications, 100768.
 
 ```
 
