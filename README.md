@@ -1,6 +1,6 @@
 # AI to Protect AI: A Modular Pipeline for Detecting Label‑Flipping Poisoning
 
-This repo contains the code used for the paper <a name="https://doi.org/10.1016/j.mlwa.2025.100768"><**“AI to Protect AI: A Modular Pipeline for Detecting Label‑Flipping Poisoning Attacks.”**</a> It implements a two‑stage, modular defence:
+This repo contains the code used for the paper [**“AI to Protect AI: A Modular Pipeline for Detecting Label‑Flipping Poisoning Attacks.”**](#"https://doi.org/10.1016/j.mlwa.2025.100768") It implements a two‑stage, modular defence:
 
 * **Behaviour Monitoring Module (BMM):** trains a standard classifier (the “target model”) and extracts behaviour features from it (probabilities, entropy, top‑2 margin, and optionally penultimate activations).
 * **Detection Module (DM):** trains a separate detector (XGBoost / MLP or unsupervised IF / Mahalanobis) on those features to flag poisoned vs. clean samples.
